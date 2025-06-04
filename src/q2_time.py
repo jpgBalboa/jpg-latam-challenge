@@ -8,8 +8,8 @@ from utils.emoji_utils import extract_emojis
 
 def q2_time(file_path: str) -> List[Tuple[str, int]]:
 
-    #Procesa el archivo línea por línea para encontrar los 10 emojis más usados.
-    #Los emojis quedan almacenados en una lista
+    # Procesa el archivo línea por línea para encontrar los 10 emojis más usados.
+    # Los emojis quedan almacenados en una lista
 
     print("Procesando emojis")
 
@@ -33,7 +33,7 @@ def q2_time(file_path: str) -> List[Tuple[str, int]]:
         return []
 
     counter = Counter(all_emojis) # se realiza el conteo de emojis
-    top_10 = counter.most_common(10)
+    top_10 = counter.most_common(10)  # devuelve el top 10
 
     print(f"Total líneas leídas: {total_lines}")
     print(f"Emojis únicos encontrados: {len(counter)}")

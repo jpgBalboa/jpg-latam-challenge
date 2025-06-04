@@ -8,8 +8,8 @@ from utils.emoji_utils import extract_emojis
 
 def q2_memory(file_path: str) -> List[Tuple[str, int]]:
 
-    #Procesa el archivo línea por línea para encontrar los 10 emojis más usados,
-    #Optimizando el uso de memoria (no se almacenan todas las líneas ni emojis en listas).
+    # Procesa el archivo línea por línea para encontrar los 10 emojis más usados,
+    # Optimizando el uso de memoria (no se almacenan todas las líneas ni emojis en listas).
 
     print("Procesando emojis")
 
@@ -32,7 +32,7 @@ def q2_memory(file_path: str) -> List[Tuple[str, int]]:
         print(f"Error abriendo el archivo: {e}")
         return []
 
-    top_10 = counter.most_common(10)
+    top_10 = counter.most_common(10)  # devuelve el top 10
 
     print(f"Total líneas leídas: {total_lines}")
     print(f"Emojis únicos encontrados: {len(counter)}")
