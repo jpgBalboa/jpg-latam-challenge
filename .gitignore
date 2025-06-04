@@ -1,0 +1,7 @@
+# Ignorar archivos grandes
+src/tweets_json/*.zip
+src/tweets_json/*.json
+
+# Ignorar archivos compilados de Python
+__pycache__/
+*.pyc
